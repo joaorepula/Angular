@@ -2,7 +2,6 @@
 
 <table id="table">
   <tr>
-    <th>#</th>
     <th>Título</th>
     <th>Descrição</th>
     <th>Quantidade de páginas</th>
@@ -15,5 +14,6 @@
     <td>{{ p.totalPaginas }}</td>
     <td>{{ p.estoque }}</td>
     <td>{{ p.autor }}</td>
+    <td><button (click)="emprestar(p.livroId)">Emprestar</button></td>
   </tr>
 </table>

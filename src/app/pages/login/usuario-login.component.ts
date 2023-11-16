@@ -29,8 +29,11 @@ export class UsuarioCadastrarComponent {
     };
 
     this.client.post<Usuario>("https://localhost:7150/api/usuario/cadastrar", usuario).subscribe({
-      next: (usuario) => {
-        this.router.navigate(["listagem/livros"]);
+      next: (usuarioCriado) => {
+        console.log(usuarioCriado)
+        usuario.usuarioId = usuarioCriado.usuarioId;
+
+        this.router.navigate(["listagem/livros"], { state: { usuario: usuario } });
       },
       error: (erro) => {
         console.log(erro);

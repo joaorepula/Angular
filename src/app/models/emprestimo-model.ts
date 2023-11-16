@@ -3,8 +3,6 @@ import { Usuario } from "./usuario.model";
 
 export interface Emprestimo {
     emprestimoId: number;
-    livro: Livro;
-    usuario: Usuario;
-    dataEmprestimo: Date;
-    dataFinal: Date;
+    livroId: number;
+    usuarioId: number;
 }
