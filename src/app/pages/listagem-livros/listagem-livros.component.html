@@ -1,0 +1,19 @@
+<h1>Listagem de produtos</h1>
+
+<table id="table">
+  <tr>
+    <th>#</th>
+    <th>Título</th>
+    <th>Descrição</th>
+    <th>Quantidade de páginas</th>
+    <th>Estoque</th>
+    <th>Autor</th>
+  </tr>
+  <tr *ngFor="let p of livros">
+    <td>{{ p.titulo }}</td>
+    <td>{{ p.descricao }}</td>
+    <td>{{ p.totalPaginas }}</td>
+    <td>{{ p.estoque }}</td>
+    <td>{{ p.autor }}</td>
+  </tr>
+</table>

@@ -1,0 +1,25 @@
+<h1>Cadastrar Cliente</h1>
+
+<div>
+  <label>Nome:</label>
+  <input type="text" [(ngModel)]="nome" />
+</div>
+<div>
+  <label>CPF:</label>
+  <input type="text" [(ngModel)]="cpf" />
+</div>
+<div>
+  <label>Endereço:</label>
+  <input type="text" [(ngModel)]="endereco" />
+</div>
+<div>
+  <label>Telefone:</label>
+  <input type="text" [(ngModel)]="telefone" />
+</div>
+<div>
+  <label>Digite a sua senha:</label>
+  <input type="text" [(ngModel)]="senha" />
+</div>
+<div>
+  <button (click)="cadastrar()">Cadastrar</button>
+</div>
